@@ -6,11 +6,13 @@ import PostsHome from "./posts-home.component";
 export default class App extends React.Component {
     render() {
         return (
-            <BrowserRouter>
-                <Switch>
-                    <Route path="/" component={PostsHome} />
-                </Switch>
-            </BrowserRouter>
+            <div className="container">
+                <BrowserRouter>
+                    <Switch>
+                        <Route path="/" component={PostsHome} />
+                    </Switch>
+                </BrowserRouter>
+            </div>
         );
     }
 }
