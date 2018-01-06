@@ -1,8 +1,12 @@
+# vs code files
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 
+# mac files
+.DS_Store
 
+# node files
 /node_modules

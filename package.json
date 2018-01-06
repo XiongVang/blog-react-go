@@ -1,16 +1,46 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "blog-react-go",
+  "version": "1.0.0",
+  "description": "CRUD application using reactjs and golang.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm test",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XiongVang/blog-react-go.git"
+  },
+  "keywords": [
+    "CRUD",
+    "react",
+    "redux",
+    "golang"
+  ],
+  "author": "Xiong Vang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XiongVang/blog-react-go/issues"
+  },
+  "homepage": "https://github.com/XiongVang/blog-react-go#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.8",
+    "style-loader": "^0.19.1",
+    "webpack": "^3.10.0"
+  },
   "dependencies": {
+    "axios": "^0.17.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.0.17"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-promise": "^0.5.3"
   }
 }

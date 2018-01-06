@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -10,8 +11,8 @@ func main() {
 
 	router := gin.Default()
 	PostsGroup(router)
-	router.Static("/static", "./public/static")
-	router.StaticFile("/", "./public/index.html")
+	router.Static("/static", "../public/")
+	router.StaticFile("/", "../public/index.html")
 
 	log.Fatal(router.Run(port))
 }
